@@ -1,0 +1,207 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	align-items: center;
+	display: flex;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	justify-content: center;
+    background-image: url(../img/hossein-thv-spiderman.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(224, 214, 214);
+}
+
+.container{
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	max-width: 1200px;
+	width: 90%;
+}
+
+h1,
+h2,
+h3 {
+	color: rgb(224, 214, 214);
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+	font-size: 1.125em;
+}
+h3 {
+	font-size: 0.75em;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 21px;
+    color: rgb(224, 214, 214);
+}
+
+/*The widths are in a percentage!*/
+header {
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+
+header h1 {
+	border-bottom: solid;
+	margin: 0;
+	padding: 38px 0;
+	padding: 0;
+	width: 100%;
+}
+header h1 span {
+	color: #cc0000;
+}
+
+header nav {
+	padding: 46px 0;
+	width: 100%;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	display: inline;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875em;
+	padding: 0 10px;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#cc0000;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.main-image img {
+	width: 40%;
+	border-bottom: 3px solid #cc0000;
+    align-items: right;
+}
+
+.main-title {
+	float: left;
+	height: auto;
+}
+
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+	color: #cc0000;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 25px;
+    color:rgb(224, 214, 214);
+}
+
+.section-one,
+.section-two,
+.section-three {
+	border-top: 1px solid #eee;
+	width: 100%;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#cc0000;
+}
+
+.reviews {
+	color: rgb(224, 214, 214);
+	font-size: 1em;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 24px;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	border-top: 3px solid #eee;
+	clear: both;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #cc0000;
+	font-size: 1em;
+}
+
+@media all and (min-width: 768px) {
+	/*Tablet styles here*/
+	.bottom-section {
+		align-items: flex-start;
+		border-top: 1px solid #eee;
+		justify-content: space-between;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		border-top: none;
+		flex-basis: 30%;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		padding: 0 20px;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	/*Desktop styles here*/
+	header {
+		justify-content: space-between;
+	}
+
+	header h1 {
+		border-bottom: none;
+		padding: 0;
+		text-align: left;
+		width: 30%;
+	}
+
+	header nav {
+		width: 40%;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+}
