@@ -22,13 +22,17 @@ body {
 
 /***** HEADER *****/
 
-
-
 header h1 { 
     padding: 65px 0 65px 25px;
     font-family: 'Lora', serif;
     font-size: 30px;
     color: red; 
+    background: url(../img/photoholgic-black-spider.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    width: 200px;
+    border-radius: 25px;
 }
 
 nav {
@@ -59,8 +63,6 @@ header h2 span {
     color: red;
 }
 
-
-
 /***** ABOUT *****/
 
 #about .full-width {
@@ -75,17 +77,11 @@ header h2 span {
  
 #about p {
     font-size: 21px;
-    color: white;
+    color: #737373;
     line-height: 40px;
     padding-left: 50px;
     padding-right: 50px;
 }
-
-
-	
-
-
-
 /***** WORK *****/
 
 #work {
@@ -96,22 +92,23 @@ header h2 span {
 	
 }
 
-#work .full-width {
-    
-	padding: 0;
-
-	
-}
-.language-wrapper li {
-background-color: black;
-padding: 15px 0;
-margin: 20px 0;
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-flow: row wrap;
+    text-transform: uppercase;
 }
 
+.skills p  {
 
+    background-color: black;
+    padding: 15px 0;
+    margin: 20px 0;
+    width: 100%;
+}
 
 #work h3 {
-    width: 400px;
     margin: 0 auto;
 	color: white;
 	font-family: 'Lora', serif;
@@ -123,22 +120,20 @@ margin: 20px 0;
 
 /*****CONTACT*****/
 
+footer a {
+    color: red;
 
+}
 
 #contact .full-width {
     padding: 110px 0;
 
 }
 
-
-
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul 
+#contact h2, #contact #email-header, #contact, #contact ul 
 {
     padding-left: 115px;
 }
-
-
-
 
 #contact h2 {
     font-family: 'Lora', serif; 
@@ -146,16 +141,9 @@ margin: 20px 0;
     line-height: 44px;
 }
 
-#contact ul {
-    list-style: none;
-}
-#contact ul li {
-     display: inline-block;
-}
-#contact ul img {
-    padding-right: 48px;
-}
-
 #contact p {
 	width: 100%;
+    margin: 0;
+    justify-content: center;
+    display: flex;
 }
